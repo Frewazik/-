@@ -1,0 +1,200 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Навигационное меню */
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo a {
+    color: #00f7ff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #00f7ff;
+}
+
+/* Главный экран */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #00f7ff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #00c8d5;
+}
+
+/* Секция с карточками */
+.features {
+    padding: 100px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr ));
+    gap: 30px;
+}
+
+.feature-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.feature-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00f7ff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+.feature-button:hover {
+    background: #00c8d5;
+}
+
+/* Мотивационный раздел */
+.motivation {
+    padding: 100px 20px;
+    background: #111;
+    text-align: center;
+}
+
+.motivation-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#quote-container {
+    padding: 20px;
+    border-radius: 10px;
+    background: #222;
+}
+
+#quote-text {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+#new-quote {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00f7ff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+#new-quote:hover {
+    background: #00c8d5;
+}
+
+/* Футер */
+.footer {
+    background: #111;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-section {
+    margin: 20px;
+}
+
+.footer-bottom {
+    padding: 20px;
+    background: #000;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin-bottom: 0;
+}
